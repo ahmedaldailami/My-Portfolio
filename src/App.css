@@ -1,0 +1,248 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+
+@theme {
+    --font-sans: var(--font-geist-sans);
+}
+
+@import "./components/lightswind.css";
+
+
+
+/* @font-face {
+    font-family: "Geist Sans";
+    src: url("../node_modules/@vercel/fonts/geist-sans/GeistSans-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Geist Sans";
+    src: url("../node_modules/@vercel/fonts/geist-sans/GeistSans-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Geist Sans";
+    src: url("../node_modules/@vercel/fonts/geist-sans/GeistSans-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+} */
+
+
+
+
+/* Animated Gradient Border Button Property and Animation */
+/* @property MUST be defined at the global scope, not inside a rule */
+@property --border-angle {
+    syntax: "<angle>";
+    inherits: true;
+    initial-value: 0turn;
+}
+
+
+:root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 0%;
+    --card: 0 0% 100%;
+    --primary: 250 47% 30%;
+    --border: 214 32% 91%;
+
+
+    --radius: 2rem;
+}
+
+/* Dark theme variables */
+.dark {
+    /* HSL values for theme colors in dark mode */
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
+    --card: 222 47% 8%;
+    --primary: 250 65% 65%;
+    --border: 217 33% 20%;
+
+}
+
+* {
+    font-family: "Geist Sans", sans-serif !important;
+}
+
+
+
+
+/* Custom Card Component Styling */
+.custom-card {
+    border-radius: var(--radius);
+    /* Using CSS variable for radius */
+    box-shadow:
+        0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    /* shadow-lg */
+    padding: 1.5rem;
+    /* spacing.6 */
+    background-color: hsl(var(--card));
+    /* Use card background color */
+    border: 1px solid hsl(var(--border));
+    /* Use border color */
+}
+
+/* Card Hover Effect */
+.card-hover {
+    transition-property: transform;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+    transform: none;
+}
+
+.card-hover:hover {
+    transform: scale(1.1);
+    box-shadow:
+        0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+
+/* Animated Gradient Border Button Styles */
+
+
+.gradient-border {
+    --border-angle: 0turn;
+    background:
+        /* conic-gradient(from var(--border-angle),from var(--gold), var(--gold)) padding-box, */
+        conic-gradient(from var(--border-angle), hsl(var(--card)), hsl(var(--card))) padding-box,
+        conic-gradient(from var(--border-angle),
+            transparent 25%,
+            #08f,
+            rgb(1, 206, 46) 99%,
+            transparent) border-box;
+    animation: bg-spin 3s linear infinite;
+    border: 2px solid transparent;
+    background-origin: border-box;
+}
+
+.gradient-border:hover {
+    animation-play-state: paused;
+}
+
+
+
+
+
+
+
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.animate-marquee {
+    display: inline-flex;
+    animation: marquee 25s linear infinite;
+}
+
+.animate-marquee:hover {
+    animation-play-state: paused;
+}
+
+
+
+
+
+
+
+/* From Uiverse.io by chase2k25 */
+.glass-radio-group {
+    --bg: rgba(14, 13, 13, 0.219);
+    --text: #e5e5e5;
+
+    display: flex;
+    position: relative;
+    background: var(--bg);
+    border-radius: 1rem;
+    backdrop-filter: blur(12px);
+    box-shadow:
+        inset 1px 1px 4px rgba(255, 255, 255, 0.2),
+        inset -1px -1px 6px rgba(0, 0, 0, 0.3),
+        0 4px 12px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    width: fit-content;
+}
+
+.glass-radio-group input {
+    display: none;
+}
+
+.glass-radio-group label {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 3rem;
+    font-size: 0.6rem;
+    padding: 0.4rem 0.8rem;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    color: var(--text);
+    text-shadow: 0.1rem 0.1rem 0.3rem #000;
+    position: relative;
+    z-index: 2;
+    transition: color 0.3s ease-in-out;
+}
+
+.glass-radio-group label:hover {
+    color: white;
+}
+
+.glass-radio-group input:checked + label {
+    color: #fff;
+}
+
+.glass-glider {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: calc(100% / 2);
+    border-radius: 1rem;
+    z-index: 1;
+    transition:
+        transform 0.5s cubic-bezier(0.37, 1.95, 0.66, 0.56),
+        background 0.4s ease-in-out,
+        box-shadow 0.4s ease-in-out;
+}
+
+/* Silver */
+.glass-glider.silver {
+    transform: translateX(0%);
+    background: linear-gradient(135deg, #c0c0c055, #e0e0e0);
+    box-shadow:
+        0 0 18px rgba(192, 192, 192, 0.5),
+        0 0 10px rgba(255, 255, 255, 0.4) inset;
+}
+
+/* Gold */
+.glass-glider.gold {
+    transform: translateX(0%);
+    background: linear-gradient(135deg, #ffd70055, #ffcc00);
+    box-shadow:
+        0 0 18px rgba(255, 215, 0, 0.5),
+        0 0 10px rgba(255, 235, 150, 0.4) inset;
+}
+
+/* Platinum */
+.glass-glider.platinum {
+    transform: translateX(100%);
+    background: linear-gradient(135deg, hsl(250, 32%, 37%), hsl(250 47% 60%));
+    box-shadow:
+        0 0 18px rgba(160, 216, 255, 0.5),
+        0 0 10px rgba(200, 240, 255, 0.4) inset;
+}
