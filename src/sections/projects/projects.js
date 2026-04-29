@@ -1,10 +1,35 @@
   export const projects = [
     {
+      id: 101,
+      category: "React",
+      theme: "dark",
+      title: "Admin Dashboard",
+      description:
+        "A beautiful Admin Dashboard with a light&dark theme using React & Tailwind.",
+      image: "/projects/project101.png",
+      tags: ["React", "Tailwind"],
+      demoUrl: "https://admin-dashboard-coral-eight-10.vercel.app/",
+      githubUrl: "https://github.com/ahmedaldailami/Admin-Dashboard.git",
+    },
+    {
+      id: 102,
+      category: "React",
+      theme: "dark",
+      title: "Perfect Vault",
+      description:
+        "A beautiful Vault Dashboard with a light&dark theme using React & Tailwind.",
+      image: "/projects/project102.png",
+      tags: ["React", "Tailwind"],
+      demoUrl: "https://perfectvault2.vercel.app/",
+      githubUrl: "https://github.com/ahmedaldailami/Perfect-Vault.git",
+    },
+    {
       id: 1,
       category: "React",
       theme: "dark",
       title: "Portfolio",
-      description: "A beautiful Portfolio page with a light&dark theme using React & Tailwind.",
+      description:
+        "A beautiful Portfolio page with a light&dark theme using React & Tailwind.",
       image: "/projects/project1.png",
       tags: ["React", "Tailwind"],
       demoUrl: "https://anassultanali.github.io/Mohamed-Ali-Club/",
@@ -15,9 +40,10 @@
       category: "React",
       theme: "light",
       title: "E-commerce website",
-      description: "A beautiful E-commerce website with Cart & faivurites It also has a landing page.",
+      description:
+        "A beautiful E-commerce website with Cart & faivurites It also has a landing page.",
       image: "/projects/project2.png",
-      tags: ["React","Tailwind", "API"],
+      tags: ["React", "Tailwind", "API"],
       demoUrl: "https://anassultanali.github.io/Landing_page_tailwind/",
       githubUrl: "https://github.com/anassultanali/Landing_page_tailwind",
     },
@@ -98,7 +124,7 @@
       demoUrl: "https://moviesrecommendation1.netlify.app/",
       githubUrl: "https://github.com/anassultanali/React-Movies-Recommendation",
     },
-   
+
     {
       id: 11,
       category: "HTML&CSS",

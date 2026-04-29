@@ -1,3 +1,4 @@
+import { GitCommit, Link } from "lucide-react";
 import TiltedCard from "./TiltedCard";
 import { motion } from "framer-motion";
 
@@ -39,7 +40,7 @@ const Project = ({ project }) => {
                   target="_blank"
                   className="text-foreground/80 hover:text-primary transition-colors duration-300"
                 >
-                  🔗
+                  <Link />
                   {/* <ExternalLink size={20} /> */}
                 </a>
                 <a
@@ -47,7 +48,7 @@ const Project = ({ project }) => {
                   target="_blank"
                   className="text-foreground/80 hover:text-primary transition-colors duration-300"
                 >
-                  😺
+                  <GitCommit />
                   {/* <Github size={20} /> */}
                 </a>
               </div>
