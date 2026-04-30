@@ -2,6 +2,16 @@ import { useEffect, useState } from "react";
 import Dock from "./dock";
 import { AnimatePresence } from "motion/react";
 import { motion } from "framer-motion";
+import {
+  FolderKanban,
+  GalleryThumbnails,
+  Home,
+  Image,
+  Laptop,
+  Lightbulb,
+  Phone,
+  User,
+} from "lucide-react";
 
 const Footer = () => {
   const [showDock, setShowDock] = useState(false);
@@ -37,60 +47,57 @@ const Footer = () => {
   // Dock items
   const dockItems = [
     {
-      // icon: <Home size={24} />,
-      icon: <p>🏠</p>,
+      icon: <Home size={24} />,
       label: "Home",
       onClick: () => scrollToSection("home"),
     },
     {
-      // icon: <User size={24} />,
-      icon: <p>👤</p>,
+      icon: <User size={24} />,
       label: "About",
       onClick: () => scrollToSection("about"),
     },
     {
-      // icon: <GraduationCap size={24} />,
-      icon: <p>⌨️</p>,
+      icon: <Lightbulb size={24} />,
       label: "Skills",
       onClick: () => scrollToSection("skills"),
     },
     {
-      // icon: <Briefcase size={24} />,
-      icon: <p>💻</p>,
+      icon: <Laptop size={24} />,
       label: "Projects",
       onClick: () => scrollToSection("projects"),
     },
     {
-      // icon: <FolderKanban size={24} />,
-      icon: <p>🖼️</p>,
+      icon: <Image size={24} />,
       label: "Gallary",
       onClick: () => scrollToSection("gallary"),
     },
     {
-      icon: <p>📞</p>,
+      icon: <Phone size={24} />,
       label: "Contact",
       onClick: () => scrollToSection("contact"),
     },
   ];
   return (
-    <AnimatePresence>
-      {showDock && (
-        <motion.div
-          initial={{ y: 100, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          exit={{ y: 100, opacity: 0 }}
-          transition={{ duration: 0.6, ease: "easeInOut" }}
-          className="fixed bottom-4 left-1/2 -translate-x-1/2 z-[999]"
-        >
-          <Dock
-            items={dockItems}
-            position="bottom"
-            magnification={70}
-            baseItemSize={50}
-          />
-        </motion.div>
-      )}
-    </AnimatePresence>
+    <footer className=" hidden sm:block">
+      <AnimatePresence>
+        {showDock && (
+          <motion.div
+            initial={{ y: 100, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            exit={{ y: 100, opacity: 0 }}
+            transition={{ duration: 0.6, ease: "easeInOut" }}
+            className="fixed bottom-4 left-1/2 -translate-x-1/2 z-[999]"
+          >
+            <Dock
+              items={dockItems}
+              position="bottom"
+              magnification={70}
+              baseItemSize={50}
+            />
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </footer>
   );
 };
 export default Footer;

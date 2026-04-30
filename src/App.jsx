@@ -18,29 +18,6 @@ function App() {
       {/*            Background            */}
       <Background />
 
-      {/*                  Header                 */}
-      {/* {!showDock && (
-        <header className=" w-full top-0 fixed flex justify-center z-[1000]">
-          <PillNav
-            logo={"logo.png"}
-            logoAlt="Company Logo"
-            items={[
-              { label: t("navbar.home"), href: '#Home' },
-              { label: t("navbar.about"), href: '#about' },
-              { label: t("navbar.skills"), href: '#skills' },
-              { label: t("navbar.projects"), href: '#Projects'},
-              { label: t("navbar.gallary"), href: '#Gallary' }
-            ]}
-            activeHref="#Home"
-            className="rounded-full border-[1px] border-gray-200 dark:border-gray-700 backdrop-blur-xl"
-            ease="power2.easeOut"
-            baseColor="var(--foreground)"
-            pillColor="var(--background)"
-            hoveredPillTextColor="var(--background)"
-            pillTextColor="var(--background)"
-          />
-        </header>
-      )} */}
 
       <Header />
 
