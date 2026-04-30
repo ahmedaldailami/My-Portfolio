@@ -35,7 +35,7 @@ i18n.use(initReactI18next).init({
           subtitles2:
             "Creative digital professional specializing in Front-End Development, UI/UX Design, and Graphic Design, focused on building modern user experiences that combine clean visuals, smooth functionality, and strong visual identity. Passionate about transforming ideas into interactive and impactful designs through creativity, attention to detail, and a deep understanding of both aesthetics and user experience.",
           contactBtn: "Get In Touch",
-          CVbtn: " Download CV",
+          CVbtn: " Download Resume",
           card1: {
             title: "Web Development",
             sub: "As a Front-End Developer, I transform ideas and designs into fast, responsive, and interactive web experiences with a strong focus on performance, usability, and modern visual details.",
@@ -127,8 +127,7 @@ i18n.use(initReactI18next).init({
           fName: " أحمد",
           lName: " الديلمي ",
           subtitle: `مطوّر واجهات أمامية و مصمم جرافيك`,
-          subtitles:
-            "أصمم واجهات وتجارب وهوية بصرية تنبض بالإبداع والدقة، أحوّل الأفكار إلى تصميم ذكي وجذاب يجمع بين الجمال والوظيفة ليصنع تجربة مستخدم قوية لا تُنسى ويمنح كل مشروع شخصية بصرية مميزة وواضحة.",
+          subtitles:"أصمم واجهات وتجارب وهوية بصرية تنبض بالإبداع والدقة، أحوّل الأفكار إلى تصميم ذكي وجذاب يجمع بين الجمال والوظيفة ليصنع تجربة مستخدم قوية لا تُنسى ويمنح كل مشروع شخصية بصرية مميزة وواضحة.",
           heroBtn: "عرض أعمالي",
           scroll: "اكتشف المزيد",
         },

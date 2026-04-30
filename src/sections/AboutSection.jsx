@@ -37,15 +37,24 @@ export const AboutSection = () => {
             {/* <p className="text-muted-foreground">{t("about.subtitles2")}</p> */}
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
-              <a
+              {/* <a
                 href="#contact"
+                className="px-6 py-2 rounded-full border border-primarylw text-primarylw hover:scale-110 duration-500"
+              ></a> */}
+              <a
+                href="https://wa.me/966539601938?text=Hello%20I%20want%20to%20contact%20you"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="px-6 py-2 rounded-full border border-primarylw text-primarylw hover:scale-110 duration-500"
               >
                 {t("about.contactBtn")}
               </a>
 
               <a
-                href=""
+                href="/Ahmed_Aldailami_CV.pdf"
+                download
+                target="_blank"
+                rel="noreferrer"
                 className="px-6 py-2 rounded-full border border-primarylw hover:scale-110 duration-500"
               >
                 {t("about.CVbtn")}
