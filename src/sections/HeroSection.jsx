@@ -68,7 +68,7 @@ export const HeroSection = () => {
         </motion.h2>
 
         <motion.p
-          className="mt-4 text-xs text-muted-foreground"
+          className="mt-4 text-sm text-muted-foreground"
           initial={{ opacity: 0, y: 20, filter: "blur(4px)" }}
           animate={{
             opacity: 1,
@@ -77,11 +77,7 @@ export const HeroSection = () => {
             transition: { duration: 0.8, ease: "easeOut" },
           }}
         >
-          Crafting elegant, user-friendly, and high-performance digital
-          experiences for global brands. Specializing in UI/UX design, frontend
-          & backend development, and creating scalable solutions that captivate
-          audiences. Passionate about blending creativity with technology to
-          bring ideas to life.
+          {t("hero.subtitles")}
         </motion.p>
       </motion.div>
 

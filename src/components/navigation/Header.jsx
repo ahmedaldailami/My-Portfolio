@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import { BookCheckIcon, Languages, Moon, Sun } from "lucide-react";
+import { BookCheckIcon, Languages, Menu, Moon, Sun } from "lucide-react";
 // import { Menu, X, Sun, Moon, BookCheckIcon } from "lucide-react";
 
 export default function Header() {
@@ -34,8 +34,6 @@ export default function Header() {
     localStorage.setItem("language", language);
     i18n.changeLanguage(language);
   }, [language, i18n]);
-
- 
 
   // Scroll listener for hide/show header
   useEffect(() => {
@@ -133,11 +131,61 @@ export default function Header() {
             transition-all duration-300"
           >
             {/* Languages */}
-              <Languages
-                onClick={() =>
-                  language === "ar" ? setLanguage("en") : setLanguage("ar")
-                }
-              />
+
+            <div className="flex items-center gap-3">
+              <motion.div
+                className="p-2 rounded-full text-xs font-semibold
+              hover:bg-blue-400 dark:hover:bg-blue-800 transition-colors
+               md:text-sm"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                <Languages
+                  onClick={() =>
+                    language === "ar" ? setLanguage("en") : setLanguage("ar")
+                  }
+                />
+              </motion.div>
+              {/* Theme Toggle Button */}
+              <motion.button
+                onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+                className="p-2 rounded-full text-xs font-semibold
+              hover:bg-blue-400 dark:hover:bg-blue-800 transition-colors
+               md:text-sm"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                <AnimatePresence mode="wait" initial={false}>
+                  {theme === "dark" ? (
+                    <motion.div
+                      key="moon"
+                      initial={{ y: -20, opacity: 0 }}
+                      animate={{ y: 0, opacity: 1 }}
+                      exit={{ y: 20, opacity: 0 }}
+                      transition={{ duration: 0.2 }}
+                    >
+                      <Moon
+                        size={20}
+                        className="text-gray-800 dark:text-white"
+                      />
+                    </motion.div>
+                  ) : (
+                    <motion.div
+                      key="sun"
+                      initial={{ y: 20, opacity: 0 }}
+                      animate={{ y: 0, opacity: 1 }}
+                      exit={{ y: -20, opacity: 0 }}
+                      transition={{ duration: 0.2 }}
+                    >
+                      <Sun
+                        size={20}
+                        className="text-gray-800 dark:text-white"
+                      />
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </motion.button>
+            </div>
 
             {/* Desktop Navigation */}
             <nav className="hidden md:flex flex-1 justify-center">
@@ -150,8 +198,8 @@ export default function Header() {
                   >
                     <a
                       onClick={() => handleScrollTo(item.href)}
-                      className="cursor-pointer hover:text-pink-800
-                       dark:hover:text-pink-400"
+                      className="cursor-pointer hover:text-primary 
+                       dark:hover:text-blue-600 transition-colors"
                     >
                       {item.name}
                     </a>
@@ -166,47 +214,12 @@ export default function Header() {
               </ul>
             </nav>
 
-            {/* Theme Toggle Button */}
-            <motion.button
-              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-              className="p-2 rounded-full text-sm font-semibold
-              hover:bg-pink-400 dark:hover:bg-pink-800 transition-colors
-               hidden md:block"
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-            >
-              <AnimatePresence mode="wait" initial={false}>
-                {theme === "dark" ? (
-                  <motion.div
-                    key="moon"
-                    initial={{ y: -20, opacity: 0 }}
-                    animate={{ y: 0, opacity: 1 }}
-                    exit={{ y: 20, opacity: 0 }}
-                    transition={{ duration: 0.2 }}
-                  >
-                    <Moon size={20} className="text-gray-800 dark:text-white" />
-                  </motion.div>
-                ) : (
-                  <motion.div
-                    key="sun"
-                    initial={{ y: 20, opacity: 0 }}
-                    animate={{ y: 0, opacity: 1 }}
-                    exit={{ y: -20, opacity: 0 }}
-                    transition={{ duration: 0.2 }}
-                  >
-                    <Sun size={20} className="text-gray-800 dark:text-white" />
-                  </motion.div>
-                )}
-              </AnimatePresence>
-            </motion.button>
-
             {/* Mobile Menu Button - Hamburger */}
             <button
               onClick={() => setIsMobileMenuOpen(true)}
               className="md:hidden text-gray-800 dark:text-white"
             >
-              menu
-              {/* <Menu size={24} /> */}
+              <Menu size={24} />
             </button>
           </div>
 

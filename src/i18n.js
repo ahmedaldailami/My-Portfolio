@@ -23,7 +23,7 @@ i18n.use(initReactI18next).init({
           lName: "Aldailami",
           subtitle: "Front-End Developer & Graphic Designer",
           subtitles:
-            "I create stellar web experiences with modern technologies. Specializing in front-end development, I build interfaces that are both beautiful and functional.",
+            "I design interfaces, experiences, and visual identities that combine creativity with precision, transforming ideas into intelligent and engaging designs that balance aesthetics and functionality, creating strong user experiences and giving every project a distinct and memorable visual identity.",
           heroBtn: "View My Work",
           scroll: "Scroll",
         },
@@ -126,7 +126,9 @@ i18n.use(initReactI18next).init({
           welcome: "مرحباً، أنا",
           fName: " أحمد",
           lName: " الديلمي ",
-          subtitle: `مطوّر واجهات أمامية ومصمم جرافيك؛ أبني مواقع ويب حديثة باستخدام React ⚛️ و Laravel 🛠️   `,
+          subtitle: `مطوّر واجهات أمامية و مصمم جرافيك`,
+          subtitles:
+            "أصمم واجهات وتجارب وهوية بصرية تنبض بالإبداع والدقة، أحوّل الأفكار إلى تصميم ذكي وجذاب يجمع بين الجمال والوظيفة ليصنع تجربة مستخدم قوية لا تُنسى ويمنح كل مشروع شخصية بصرية مميزة وواضحة.",
           heroBtn: "عرض أعمالي",
           scroll: "اكتشف المزيد",
         },
