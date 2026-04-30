@@ -1,11 +1,14 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import { BookCheckIcon, Languages, Moon, Sun } from "lucide-react";
 // import { Menu, X, Sun, Moon, BookCheckIcon } from "lucide-react";
 
-
 export default function Header() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const [language, setLanguage] = useState(() => {
+    return localStorage.getItem("language") || "ar";
+  });
   const [theme, setTheme] = useState(() => {
     return localStorage.getItem("theme") || "light";
   });
@@ -23,6 +26,16 @@ export default function Header() {
     }
     localStorage.setItem("theme", theme);
   }, [theme]);
+
+  // change lang
+  useEffect(() => {
+    document.dir = language === "ar" ? "rtl" : "ltr";
+    document.documentElement.lang = language;
+    localStorage.setItem("language", language);
+    i18n.changeLanguage(language);
+  }, [language, i18n]);
+
+ 
 
   // Scroll listener for hide/show header
   useEffect(() => {
@@ -119,15 +132,12 @@ export default function Header() {
             flex items-center justify-between px-6 py-3
             transition-all duration-300"
           >
-            {/* <BorderBeam /> */}
-
-            {/* Logo / Brand */}
-            <a
-              onClick={() => handleScrollTo("home")}
-              className="cursor-pointer font-bold text-lg text-gray-800 dark:text-white"
-            >
-              {/* <BookCheckIcon /> */}j
-            </a>
+            {/* Languages */}
+              <Languages
+                onClick={() =>
+                  language === "ar" ? setLanguage("en") : setLanguage("ar")
+                }
+              />
 
             {/* Desktop Navigation */}
             <nav className="hidden md:flex flex-1 justify-center">
@@ -174,8 +184,7 @@ export default function Header() {
                     exit={{ y: 20, opacity: 0 }}
                     transition={{ duration: 0.2 }}
                   >
-                    dark
-                    {/* <Moon size={20} className="text-gray-800 dark:text-white" /> */}
+                    <Moon size={20} className="text-gray-800 dark:text-white" />
                   </motion.div>
                 ) : (
                   <motion.div
@@ -185,8 +194,7 @@ export default function Header() {
                     exit={{ y: -20, opacity: 0 }}
                     transition={{ duration: 0.2 }}
                   >
-                    light
-                    {/* <Sun size={20} className="text-gray-800 dark:text-white" /> */}
+                    <Sun size={20} className="text-gray-800 dark:text-white" />
                   </motion.div>
                 )}
               </AnimatePresence>
@@ -223,8 +231,7 @@ export default function Header() {
                   exit={{ scale: 0, opacity: 0 }}
                   transition={{ delay: 0.2 }}
                 >
-                  X
-                  {/* <X size={32} /> */}
+                  X{/* <X size={32} /> */}
                 </motion.button>
 
                 <motion.ul
