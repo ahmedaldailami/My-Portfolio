@@ -29,7 +29,7 @@ export const AboutSection = () => {
                 {t("about.subTitle")}
               </ScrollFloat>
             ) : (
-              <h3 className="text-3xl font-bold">{t("about.subTitle")}</h3>
+              <h3 className="text-2xl font-bold">{t("about.subTitle")}</h3>
             )}
 
             <p className="text-muted-foreground">{t("about.subtitles2")}</p>

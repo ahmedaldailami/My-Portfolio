@@ -30,23 +30,23 @@ i18n.use(initReactI18next).init({
         about: {
           title1: "About ",
           title2: "Me",
-          subTitle: "Web Developer & Tech Creator",
+          subTitle: "Web Developer & Graphic Designer",
           subtitles1: "",
           subtitles2:
-            "I'm passionate about creating elegant solutions to complex problems, and I'm constantly learning new technologies and techniques to stay at the forefront of the ever-evolving web landscape.",
+            "Creative digital professional specializing in Front-End Development, UI/UX Design, and Graphic Design, focused on building modern user experiences that combine clean visuals, smooth functionality, and strong visual identity. Passionate about transforming ideas into interactive and impactful designs through creativity, attention to detail, and a deep understanding of both aesthetics and user experience.",
           contactBtn: "Get In Touch",
           CVbtn: " Download CV",
           card1: {
             title: "Web Development",
-            sub: "Creating responsive websites and web applications with modern frameworks.",
+            sub: "As a Front-End Developer, I transform ideas and designs into fast, responsive, and interactive web experiences with a strong focus on performance, usability, and modern visual details.",
           },
           card2: {
             title: "UI/UX Design",
-            sub: "Designing intuitive user interfaces and seamless user experiences.",
+            sub: "As a UI/UX Designer, I create intuitive and user-centered digital experiences that combine clean aesthetics with functional design to deliver smooth and engaging interactions.",
           },
           card3: {
-            title: "Project Management",
-            sub: "Leading projects from conception to completion with agile methodologies.",
+            title: "Graphic Design",
+            sub: "As a Graphic Designer, I craft creative visual identities and impactful designs that help brands stand out, communicate their message clearly, and leave a lasting impression.",
           },
         },
         skills: {
@@ -57,7 +57,7 @@ i18n.use(initReactI18next).init({
         },
         gallary: {
           title1: " My ",
-          title2: "Gallary"
+          title2: "Gallary",
         },
         projects: {
           title1: "Featured ",
@@ -66,17 +66,17 @@ i18n.use(initReactI18next).init({
           sub: "Here are some of my recent projects. Each project was carefully crafted with attention to detail, performance, and user experience.",
           project1: {
             title: "Mohamed Ali Club",
-            sub: "A multi-page introductory website using Bootstrap."
+            sub: "A multi-page introductory website using Bootstrap.",
           },
           project2: {
             title: "Interno Furniture",
-            sub: "A beautiful landing page app using  Tailwind."
+            sub: "A beautiful landing page app using  Tailwind.",
           },
           project3: {
             title: "Movies Recommendation",
-            sub: "A Movies Recommendation page using React and Tailwind."
+            sub: "A Movies Recommendation page using React and Tailwind.",
           },
-          btn: "Check My Github →"
+          btn: "Check My Github →",
         },
         contact: {
           title1: "Get In ",
@@ -92,19 +92,19 @@ i18n.use(initReactI18next).init({
             title: "Send a Message",
             name: {
               title: "Your Name",
-              PH: "Inter your name..."
+              PH: "Inter your name...",
             },
             email: {
               title: "Your Email",
-              PH: "Inter your Email..."
+              PH: "Inter your Email...",
             },
             message: {
               title: "Your Message",
-              PH: "Inter your Message..."
+              PH: "Inter your Message...",
             },
-            btnSend : "Send Message",
-            btnSending : "Sending...",
-          }
+            btnSend: "Send Message",
+            btnSending: "Sending...",
+          },
         },
       },
     },
@@ -136,20 +136,20 @@ i18n.use(initReactI18next).init({
           subTitle: "مطور مواقع إلكترونية ومصمم جرافيك ",
           subtitles1: "",
           subtitles2:
-            "أنا شغوف بابتكار حلول أنيقة للمشاكل المعقدة، وأحرص باستمرار على تعلم التقنيات والأساليب الجديدة للبقاء في طليعة المشهد المتطور باستمرار للويب.",
+            "مبدع رقمي متخصص في تطوير الواجهات الأمامية Front-End وتصميم UI/UX والجرافيك ديزاين، أعمل على تحويل الأفكار إلى تجارب رقمية حديثة تجمع بين الجمال البصري وسهولة الاستخدام والأداء الاحترافي، مع اهتمام دقيق بالتفاصيل وصناعة هويات وتصاميم تترك أثرًا قويًا وتجربة مميزة للمستخدم.",
           contactBtn: "تواصل معنا",
           CVbtn: " تحميل السيرة الذاتية",
           card1: {
             title: "تطوير الويب",
-            sub: "إنشاء مواقع ويب وتطبيقات ويب متجاوبة باستخدام أطر عمل حديثة.",
+            sub: "كمطور Front-End أعمل على تحويل التصاميم والأفكار إلى واجهات تفاعلية سريعة وعصرية تجمع بين الأداء القوي وتجربة الاستخدام السلسة مع اهتمام دقيق بكل تفصيلة بصرية وتقنية.",
           },
           card2: {
             title: "تصميم UI/UX",
-            sub: "تصميم واجهات مستخدم سهلة الاستخدام وتجارب مستخدم سلسة.",
+            sub: "كمصمم UI/UX أركز على بناء تجارب رقمية مريحة وذكية تجعل المستخدم يتفاعل بسهولة مع المنتج من خلال تصميم واجهات واضحة وعملية تجمع بين الجمال والوظيفة.",
           },
           card3: {
-            title: "إدارة المشاريع",
-            sub: "قيادة المشاريع من الفكرة إلى الإنجاز باستخدام منهجيات رشيقة.",
+            title: "مصمم جرافيك",
+            sub: "كمصمم جرافيك أبتكر تصاميم وهويات بصرية تعكس قوة الفكرة وتلفت الانتباه بأسلوب احترافي يساعد العلامات التجارية على الظهور بشكل مميز وترك انطباع قوي.",
           },
         },
         skills: {
@@ -160,7 +160,7 @@ i18n.use(initReactI18next).init({
         },
         gallary: {
           title1: " معرض  ",
-          title2: "الصور"
+          title2: "الصور",
         },
         projects: {
           title1: " المشاريع ",
@@ -169,17 +169,17 @@ i18n.use(initReactI18next).init({
           sub: "إليكم بعض مشاريعي الأخيرة. تم تصميم كل مشروع بعناية فائقة مع الاهتمام بالتفاصيل والأداء وتجربة المستخدم.",
           project1: {
             title: "نادي محمد علي",
-            sub: "موقع تعريفي متعدد الصفحات باستخدام  Bootstrap."
+            sub: "موقع تعريفي متعدد الصفحات باستخدام  Bootstrap.",
           },
           project2: {
             title: "Interno للأثاث",
-            sub: "صفحة تعريفية باستخدام Tailwind"
+            sub: "صفحة تعريفية باستخدام Tailwind",
           },
           project3: {
             title: "توصيات الأفلام",
-            sub: "صفحة توصيات أفلام باستخدام React و Tailwind."
+            sub: "صفحة توصيات أفلام باستخدام React و Tailwind.",
           },
-          btn: "راجع حسابي على Github ←"
+          btn: "راجع حسابي على Github ←",
         },
         contact: {
           title1: "تواصل  ",
@@ -195,19 +195,19 @@ i18n.use(initReactI18next).init({
             title: "أرسل لي رسالة",
             name: {
               title: "أسمك",
-              PH: "أدخل أسمك..."
+              PH: "أدخل أسمك...",
             },
             email: {
               title: "البريد الألكتروني",
-              PH: "أدخل بريدك الألكتروني..."
+              PH: "أدخل بريدك الألكتروني...",
             },
             message: {
               title: "رسالتك",
-              PH: "أدخل رسالتك هنا..."
+              PH: "أدخل رسالتك هنا...",
             },
-            btnSend : "أرسال",
-            btnSending : "جاري الأرسال...",
-          }
+            btnSend: "أرسال",
+            btnSending: "جاري الأرسال...",
+          },
         },
       },
     },
