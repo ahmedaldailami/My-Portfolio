@@ -18,7 +18,7 @@ export const Marquee = ({data}) => {
             >
                 <div className="max-w-6xl mx-auto px-6">
                     <div className="w-full overflow-hidden py-6">
-                        <div className="flex gap-14 items-center justify-center animate-marquee whitespace-nowrap">
+                        <div className="flex gap-14 items-center animate-marquee whitespace-nowrap">
                             {data.concat(data).map((logo, i) => (
                                 <span
                                     key={i}
