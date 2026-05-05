@@ -157,7 +157,7 @@ i18n.use(initReactI18next).init({
           title1: "المهارات & ",
           title2: "التفنيات",
           all: "الكل",
-          tools: "التفنيات",
+          tools: "التقنيات",
         },
         gallary: {
           title1: " معرض  ",
