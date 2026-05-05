@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jost:ital,wght@0,100..900;1,100..900&family=Marhey:wght@300..700&display=swap");
+
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
@@ -58,7 +62,8 @@
 }
 
 * {
-  font-family: "Geist Sans", sans-serif !important;
+  font-family: "Cairo", sans-serif !important;
+  /* font-family: "DM Serif Display", serif; */
 }
 
 /* Custom Card Component Styling */
