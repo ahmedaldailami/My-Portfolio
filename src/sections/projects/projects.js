@@ -169,8 +169,8 @@ export const projects = [
     image:
       "https://res.cloudinary.com/dfrst7wxq/image/upload/v1777932339/project13_ncnigr.png",
     tags: ["HTML&CSS"],
-    demoUrl: "https://ahmedaldailami.github.io/projectz1/",
-    githubUrl: "https://github.com/ahmedaldailami/projectz1.git",
+    demoUrl: "https://ahmedaldailami.github.io/projectz3/",
+    githubUrl: "https://github.com/ahmedaldailami/Projectz4.git",
   },
   {
     id: 14,
@@ -193,8 +193,8 @@ export const projects = [
     image:
       "https://res.cloudinary.com/dfrst7wxq/image/upload/v1777932341/project15_hyl5ee.png",
     tags: ["HTML&CSS"],
-    demoUrl: "https://moviesrecommendation1.netlify.app/",
-    githubUrl: "https://github.com/anassultanali/React-Movies-Recommendation",
+    demoUrl: "https://ahmedaldailami.github.io/loginSigninFlip/",
+    githubUrl: "https://github.com/ahmedaldailami/loginSigninFlip.git",
   },
   {
     id: 16,
@@ -205,8 +205,8 @@ export const projects = [
     image:
       "https://res.cloudinary.com/dfrst7wxq/image/upload/v1777932340/project16_ctqrem.png",
     tags: ["HTML&CSS"],
-    demoUrl: "https://moviesrecommendation1.netlify.app/",
-    githubUrl: "https://github.com/anassultanali/React-Movies-Recommendation",
+    demoUrl: "https://ahmedaldailami.github.io/login-signinlights-/",
+    githubUrl: "https://github.com/ahmedaldailami/login-signinlights-.git",
   },
   {
     id: 17,

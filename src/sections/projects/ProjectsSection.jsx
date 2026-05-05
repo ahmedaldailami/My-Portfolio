@@ -48,7 +48,7 @@ export const ProjectsSection = () => {
 
         {/*         viwe   my   github      */}
         <motion.div
-          className="px-6 py-2 w-fit m-auto my-10 font-bold rounded-full border-[1.5px] border-primary text-primary hover:scale-110 duration-500"
+          className="px-6 py-2 w-fit m-auto mt-20 mb-10 font-bold rounded-full border-[1.5px] border-primary text-primary hover:scale-110 duration-500"
           initial={{ y: 60, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true }}
