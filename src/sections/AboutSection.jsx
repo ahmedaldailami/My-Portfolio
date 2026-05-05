@@ -46,7 +46,7 @@ export const AboutSection = () => {
                 href="https://wa.me/966539601938?text=Hello%20I%20want%20to%20contact%20you"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-6 py-2 rounded-full border border-primarylw text-primarylw hover:scale-110 duration-500"
+                className="px-6 py-2 text-center rounded-full border border-primarylw text-primarylw hover:scale-110 duration-500"
               >
                 {t("about.contactBtn")}
               </a>
@@ -56,7 +56,7 @@ export const AboutSection = () => {
                 download
                 target="_blank"
                 rel="noreferrer"
-                className="px-6 py-2 rounded-full border border-primarylw hover:scale-110 duration-500"
+                className="px-6 py-2 text-center rounded-full border border-primarylw hover:scale-110 duration-500"
               >
                 {t("about.CVbtn")}
               </a>
