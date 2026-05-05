@@ -20,7 +20,7 @@ export const SkillsSection = () => {
   ];
 
   return (
-    <section id="skills" className="py-30 px-4 relative">
+    <section id="skills" className="py-20 px-4 relative">
       {/*           start Section Header         */}
       <HeadTitle Section="skills" />
       {/*           End Section Header         */}

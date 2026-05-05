@@ -10,7 +10,7 @@ export const HeroSection = () => {
     <motion.div
       id="home"
       className="text-foreground bg-transparent flex flex-col md:flex-row 
-      items-center justify-center max-w-7xl mx-auto w-full min-h-dvh my-15 sm:py-30"
+      items-center justify-center max-w-7xl mx-auto w-full min-h-dvh my-10 sm:py-30"
       initial={{ opacity: 0 }}
       animate={{
         opacity: 1,

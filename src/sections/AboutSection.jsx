@@ -3,13 +3,14 @@ import { useTranslation } from "react-i18next";
 import ScrollFloat from "../components/text/ScrollFloat";
 import { motion } from "framer-motion";
 import { HeadTitle } from "../components/HeadTitle";
+import { Code, Layers, Monitor, Sparkles, User } from "lucide-react";
 
 export const AboutSection = () => {
   const { t } = useTranslation();
   const lang = document.documentElement.lang;
 
   return (
-    <section id="about" className="py-30 px-4 relative">
+    <section id="about" className="py-20 px-4 relative">
       {" "}
       <div className="container mx-auto max-w-5xl">
         {/*           start Section Header         */}
@@ -66,8 +67,7 @@ export const AboutSection = () => {
             <div className="gradient-border custom-card p-6 card-hover">
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-full bg-primary/10">
-                  {/* <Code className="h-6 w-6 text-primary" /> */}
-                  <span className="h-6 w-6 text-primary">p</span>
+                  <Code className="h-6 w-6 text-primary" />
                 </div>
 
                 <div className={lang === "en" ? "text-left" : "text-right"}>
@@ -80,10 +80,11 @@ export const AboutSection = () => {
                 </div>
               </div>
             </div>
+
             <div className="gradient-border custom-card p-6 card-hover">
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-full bg-primary/10">
-                  {/* <User className="h-6 w-6 text-primary" /> */}
+                  <Layers className="h-6 w-6 text-primary" />
                 </div>
                 <div className={lang === "en" ? "text-left" : "text-right"}>
                   <h4 className="font-semibold text-lg">
@@ -98,7 +99,7 @@ export const AboutSection = () => {
             <div className="gradient-border custom-card p-6 card-hover">
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-full bg-primary/10">
-                  {/* <Briefcase className="h-6 w-6 text-primary" /> */}
+                  <Sparkles className="h-6 w-6 text-primary" />
                 </div>
 
                 <div className={lang === "en" ? "text-left" : "text-right"}>
