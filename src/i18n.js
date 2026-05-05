@@ -190,7 +190,7 @@ i18n.use(initReactI18next).init({
           email: "بريد إلكتروني",
           phone: "هاتف",
           location: "الموقع",
-          locSub: "صنعاء، اليمن",
+          locSub:"الرياض، السعودية",
           socialTitle: "تواصل معي عبر...",
           form: {
             title: "أرسل لي رسالة",
